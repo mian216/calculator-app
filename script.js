@@ -1,5 +1,6 @@
 let display = document.getElementById('display');
 let currentInput = '0';
+let memoryValue = 0;  // 新增記憶變數
 
 function updateDisplay() {
     display.textContent = currentInput;
@@ -28,7 +29,7 @@ function deleteLast() {
     updateDisplay();
 }
 
-/*function calculate() {
+function calculate() {
     try {
         currentInput = eval(currentInput).toString();
         updateDisplay();
@@ -41,10 +42,6 @@ function deleteLast() {
         }, 1500);
     }
 }
-<<<<<<< HEAD
-*/
-=======
->>>>>>> 14fec57cd4e70bdd73ac63f23a5d7b9c0cc6c70b
 // 在 script.js 末尾增加
 function calculatePercentage() {
     try {
@@ -58,17 +55,7 @@ function calculatePercentage() {
             updateDisplay();
         }, 1500);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 14fec57cd4e70bdd73ac63f23a5d7b9c0cc6c70b
-// 在檔案開頭增加記憶變數
-let display = document.getElementById('display');
-let currentInput = '0';
-let memoryValue = 0;  // 新增記憶變數
-
-// ... 原有函數 ...
 
 // 新增記憶功能函數
 function memoryAdd() {
