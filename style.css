@@ -74,6 +74,7 @@ button:active {
 .zero {
     grid-column: span 2;
 }
+
 /* 新增記憶按鈕樣式 */
 .memory-buttons {
     display: grid;
@@ -99,4 +100,23 @@ button:active {
 
 .memory-btn:active {
     transform: scale(0.95);
+}
+
+/* 科學計算按鈕樣式 */
+.scientific-buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.scientific-buttons button {
+    padding: 12px 8px;
+    font-size: 0.9em;
+    background: #4caf50;
+    color: white;
+}
+
+.scientific-buttons button:hover {
+    background: #45a049;
 }
